@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="icon" type="image/x-icon" href="https://blinkit.com/images/faviconChange.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  margin-left: 30px;
+  margin-right: 60px;
+
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: left;
+  padding: 14px 40px;
+  text-decoration: none;
+  font-size: 17px;
+  
+
+}
+
+
+.topnav a.active {
+  background-color: white;
+  color: white;
+}
+
+
+.search-container{
+  margin-top:20px;
+  width:80%;
+}
+
+
+
+form {
+  color: #555;
+  display: flex;
+  padding: 2px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  margin: 12px 0 30px;
+  background-color: #eee;
+
+}
+
+input[type=search] {
+  border: none;
+  background: transparent;
+  padding: 7px 30px;
+  font-size: 14px;
+  
+  border: 1px solid transparent;
+  border-radius: inherit;
+  width: 100%;
+}
+
+input[type=search]::placeholder {
+  color: #aaa;
+
+  
+}
+
+
+button[type=submit] {
+  text-indent: -999px;
+  overflow: hidden;
+  width: 40px;
+  padding: 0;
+  margin-left: -470px;
+  border: 1px solid transparent;
+  border-radius: inherit;
+
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+button[type=submit]:hover {
+  opacity: 1;
+}
+
+button[type=submit]:focus,
+input[type=search]:focus {
+  box-shadow: 0 0 1px 0 #ccc;
+  
+  outline: none;
+}
+
+.login
+{
+  margin-left: 910px;
+  margin-top:-75px;
+
+}
+
+.delivery{
+  margin-right: 40px;
+}
+
+.aButton
+{
+  margin-left: 1030px;
+  margin-top: -65px;
+  font-size: 10px;
+  padding:7px;
+  background-color: green;
+  color:white;
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  border-color: white;
+  width: 7%;
+border: 1px solid #059905;
+
+}
+
+.Cart{
+  fill: white;
+}
+
+.aButton img{
+  width: 35%;
+  margin-right: 2px;
+filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+
+}
+
+.shopNow{
+  margin-left: 140px;
+  margin-right: 160px;
+}
+
+.slideImages ul{
+
+    list-style-type:none;
+    white-space:nowrap;
+   
+   
+    margin-left:-40px;
+    margin-right:160px;
+
+ }
+
+
+.slideImages ul li{
+display:inline;
+padding-right: 15px;
+
+
+}
+
+.addItems {
+  height: 300px;
+}
+
+
+.addItems h2 {
+  margin-right: 730px;
+}
+
+.addItems table{
+    
+    white-space:nowrap;
+    overflow: scroll;
+    display:inline;
+ margin-right: 20px;
+ }
+
+
+.addItemsTable1{
+  display: table;
+  table-layout: fixed;
+  height: 210px;
+  width: 950px;
+ 
+
+}
+
+.addItemsTable2{
+  display: table-cell;
+  width: 100%;
+
+
+
+}
+.aligntable{
+  border : 1px solid #ddd;
+  padding-top:70px;
+  padding-bottom:115px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+
+
+}
+.scroll {
+
+
+width: 850px;
+overflow-y: scroll;
+overflow-x: scroll;
+white-space: nowrap;
+}
+
+ 
+.buttonCart{
+
+border-radius: 8px;
+padding: 10px 25px 10px 25px;
+background-color: #e9f7e9;
+border-color:green;
+margin-top: 8px;
+border: 1px solid #059905;
+display: inline-block;
+text-decoration: none;
+}
+
+
+p{
+  text-align: center;
+}
+
+.HeadItem{
+  margin-left: 100px;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="#home"><img src="logo.svg"/></a>
+  <a href="#about" class="delivery"><b>Delivery in 9<br> minutes</b><br> <span style="font-size:12px;">Delhi, India</span></a>
+  
+  <div class="search-container">
+  <form>
+  <input type="search" placeholder="Search &ldquo;butter&rdquo;">
+  <button type="submit">Search</button>
+</form>
+</div>
+  <a href="#Login" class="login" style="color:#4f4e4e;">Login</a>
+
+  <button class="aButton"><img src="cart.svg" width="35px" height="26px"> My Cart</button>
+
+
+
+</div>
+
+<div class="shopNow" align="center">
+  <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=2700/layout-engine/2022-05/Group-33704.jpg" width="95%">
+</div>
+
+<div class="slideImages" align="center">
+  <div class="scroll">
+<ul>
+  <li><img height="130px" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2022-06/morning-banner.jpg"></li>
+  <li><img height="130px" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-03/Pet-Care_WEB.jpg"></li>
+  <li><img height="130px" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-03/summer_WEB.jpg"></li>
+  <li><img height="130px" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-03/electronic-WEB-1.jpg"></li>
+  <li><img height="130px" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-03/mango-WEB-1.png"></li>
+  <li><img height="130px" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-03/staples-WEB.jpg"></li>
+</ul>
+  </div></div>
+  <div class="listProduct" align="center">
+<table>
+<tr>
+
+<td><img height="122px"  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png"/></td>
+<td><img height="122px"  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-2_10.png"/></td>
+<td><img height="122px"  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-3_9.png"/></td>
+<td><img height="122px"  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-4_9.png"/></td>
+<td><img height="122px"  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-5_4.png"/></td>
+<td><img height="122px"  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-6_5.png"/></td>
+<td><img height="122px"  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-7_3.png"/></td>
+<td><img height="122px"  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-8_4.png"/></td>
+<td><img height="122px"  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-9_3.png"/></td>
+<td><img height="122px"  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-10.png"/></td>
+
+      </tr>
+      <tr>
+       <td><img height="122px"  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-11.png"/></td>
+<td><img height="122px"  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-12.png"/></td>
+<td><img height="122px"  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-13.png"/></td>
+<td><img height="122px"  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-14.png"/></td>
+<td><img height="122px"  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-15.png"/></td>
+<td><img height="122px"  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-16.png"/></td>
+<td><img height="122px"  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-17.png"/></td>
+<td><img height="122px"  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-18.png"/></td>
+<td><img height="122px"  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-19.png"/></td>
+<td><img height="122px"  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-20.png"/></td></tr>
+</table>
+</div>
+
+
+
+<div class="addItems" align="center">
+<h2 class="HeadItem">Dairy, Bread & Eggs</h2>
+<div class="scroll">
+<div class="addItemsTable1">
+<div class="addItemsTable2">
+  <table>
+    <tr><td>
+
+<table class="aligntable" border="0">
+  <tr>
+    <td colspan="2"><img height="80px" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/86446a.jpg?ts=1641540332"/></td>
+  </tr>
+    <tr>
+      <td colspan="2">Mother Dairy<br>Classic</td>
+    </tr>
+      <tr>
+        <td colspan="2" style="color:#828181; font-size:12px;">400g</td>
+      </tr>
+      <tr>
+        <td>$</td>
+        <td rowspan="2"><button class="buttonCart">ADD</button></td>
+      </tr>
+        <tr colspan="2">
+          <td>400</td>
+          
+        </tr>
+      </table>
+      
+
+
+
+<table class="aligntable"><tr><td colspan="2"><img height="80px" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/10491a.jpg"/></td></tr>    <tr>
+      <td colspan="2">Mother Dairy<br>Classic</td>
+    </tr>
+      <tr>
+        <td colspan="2" style="color:#828181; font-size:12px;">400g</td>
+      </tr>
+      <tr>
+        <td>$</td>
+        <td rowspan="2"><button class="buttonCart">ADD</button></td>
+      </tr>
+        <tr colspan="2">
+          <td>400</td>
+          
+        </tr>
+      </table>
+
+<table class="aligntable"><tr><td colspan="2"><img height="80px" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/483705a.jpg?ts=1657805510"/></td></tr>    <tr>
+      <td colspan="2">Mother Dairy<br>Classic</td>
+    </tr>
+      <tr>
+        <td colspan="2" style="color:#828181; font-size:12px;">400g</td>
+      </tr>
+      <tr>
+        <td>$</td>
+        <td rowspan="2"><button class="buttonCart">ADD</button></td>
+      </tr>
+        <tr colspan="2">
+          <td>400</td>
+          
+        </tr>
+      </table>
+
+<table class="aligntable"><tr><td colspan="2"><img height="80px" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/24194a.jpg?ts=1661157751"/></td></tr>    <tr>
+      <td colspan="2">Mother Dairy<br>Classic</td>
+    </tr>
+      <tr>
+        <td colspan="2" style="color:#828181; font-size:12px;">400g</td>
+      </tr>
+      <tr>
+        <td>$</td>
+        <td rowspan="2"><button class="buttonCart">ADD</button></td>
+      </tr>
+        <tr colspan="2">
+          <td>400</td>
+          
+        </tr>
+      </table>
+
+<table class="aligntable"><tr><td colspan="2"><img height="80px" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/192a.jpg?ts=1644908944"/></td></tr><tr>
+      <td colspan="2">Mother Dairy<br>Classic</td>
+    </tr>
+      <tr>
+        <td colspan="2" style="color:#828181; font-size:12px;">400g</td>
+      </tr>
+      <tr>
+        <td>$</td>
+        <td rowspan="2"><button class="buttonCart">ADD</button></td>
+      </tr>
+        <tr colspan="2">
+          <td>400</td>
+          
+        </tr>
+      </table>
+<table class="aligntable"><tr><td colspan="2"><img height="80px" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/160a.jpg?ts=1654778815"/></td></tr>
+  <tr>
+  <td colspan="2">Mother Dairy<br>Classic</td>
+    </tr>
+      <tr>
+        <td colspan="2" style="color:#828181; font-size:12px;">400g</td>
+      </tr>
+      <tr>
+        <td>$</td>
+        <td rowspan="2"><button class="buttonCart">ADD</button></td>
+      </tr>
+        <tr colspan="2">
+          <td>400</td>
+          
+        </tr>
+      </table>
+<table class="aligntable"><tr><td colspan="2"><img height="80px" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/45533a.jpg?ts=1654845569"/></td></tr>    <tr>
+      <td colspan="2">Mother Dairy<br>Classic</td>
+    </tr>
+      <tr>
+        <td colspan="2" style="color:#828181; font-size:12px;">400g</td>
+      </tr>
+      <tr>
+        <td>$</td>
+        <td rowspan="2"><button class="buttonCart">ADD</button></td>
+      </tr>
+        <tr colspan="2">
+          <td>400</td>
+          
+        </tr>
+      </table>
+<table class="aligntable"><tr><td colspan="2"><img height="80px" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/448095a.jpg?ts=1661157752"/></td></tr>    <tr>
+      <td colspan="2">Mother Dairy<br>Classic</td>
+    </tr>
+      <tr>
+        <td colspan="2" style="color:#828181; font-size:12px;">400g</td>
+      </tr>
+      <tr>
+        <td>$</td>
+        <td rowspan="2"><button class="buttonCart">ADD</button></td>
+      </tr>
+        <tr colspan="2">
+          <td>400</td>
+          
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+</div>
+</div>
+</div>
+
+</div>
+<p>Made with ❤️ by Akhila Negi<br><br><br></p>
+</body>
+</html>
